@@ -140,12 +140,26 @@ function myFunction() {
     }
 }
 
+document.getElementById('close').onclick = closeMyModal;
+// Функция для закрытия окна и очистки полей ввода и чекбоксов
+function closeMyModal() {
+    // Закрываем окно
+
+    var myModal = document.getElementById('myModal');
+    myModal.style.display = 'none';
+
+    var button = document.getElementById('myButton');
+    // кнопка уже активна, вернем исходные стили
+    button.classList.remove('active');
+
+   
+}
 
 // Обработчик кнопки Сбросить фильтр
 document.getElementById('myButtonB').onclick = myFunctionB;
 
 function myFunctionB() {
-    var vhInPx = window.innerHeight / 100;
+    //var vhInPx = window.innerHeight / 100;
 
     var myModal = document.getElementById('myModal');
     myModal.style.display = 'none';
@@ -238,6 +252,17 @@ function myFunctionInfo() {
         myITinfo.style.display = 'none';
         myBlock.style.backgroundColor = ''; // Возвращаем начальный цвет
     }
+}
+
+document.getElementById('close').onclick = closeMyModalInfo;
+// Функция для закрытия окна инфо
+function closeMyModalInfo() {
+    // Закрываем окно
+
+    var myModal = document.getElementById('myITinfo');
+    myModal.style.display = 'none'; 
+    myITinfo.style.display = 'none';
+    myBlock.style.backgroundColor = ''; // Возвращаем начальный цвет  
 }
 
 //Для фото-видео карусели

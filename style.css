@@ -295,7 +295,14 @@ body {
     margin: 1.2vw;
 }
 
+.container-4{
+    display: flex;
+    align-items: baseline;
+}
 
+.close{
+    margin-left: 16vw;
+}
 
 /* Стили для контейнера поиска */
 #searchContainer {
@@ -363,7 +370,7 @@ body {
     -webkit-appearance: none;
     /* other styles for aesthetics */
     width: 100%;
-    height: 1.56vw;
+    height: 2.08vw;
 
     padding-left: 1.04vw;
     margin-bottom: 0.93vh;
@@ -602,7 +609,7 @@ input[type="checkbox"]:checked + label:before {
 
 .back{
     all: unset; /* Удаление всех дефолтных стилей */
-    font-size: 0.83vw; /* Размер шрифта */
+    font-size: 0.73vw; /* Размер шрифта */
     color: rgba(56, 56, 116, 0.5); /* Цвет шрифта */
 }
 
@@ -851,8 +858,10 @@ input[type="checkbox"]:checked + label:before {
 .textInfo p{
     margin-left: 0.52vw;
     color: rgba(31, 43, 106, 1); 
-    font-size: 1.3vh;
+    font-size: 0.73vw;
     font-weight: 400;
+
+    width: 22.92vw;
 }
 
 .textInfo h2{
